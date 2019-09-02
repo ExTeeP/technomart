@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Александр Медведев](https://up.htmlacademy.ru/htmlcss/26/user/1174257).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Маркелов](https://htmlacademy.ru/profile/nikolamarkelov)
 
 ---
 
