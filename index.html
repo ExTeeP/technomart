@@ -334,14 +334,14 @@
     <section>
       <h2 class="visually-hidden">Обратная связь</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p><label>Ваше имя:
-          <input type="text" name="name" value="" placeholder=" Имя Фамилия"></label>
+        <p><label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" value="" id="name-field" placeholder=" Имя Фамилия" required>
         </p>
-        <p><label>Ваш e-mail:
-          <input type="text" name="email" value="" placeholder=" email@example.com"></label>
+        <p><label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email" value="" id="email-field" placeholder=" email@example.com" required>
         </p>
-        <p><label>Текст письма:
-          <textarea name="comment" rows="5" cols="50" placeholder=" В свободной форме"></textarea></label>
+        <p><label for="feedback-field">Текст письма:</label>
+          <textarea name="feedback" rows="5" cols="50" id="feedback-field" placeholder=" В свободной форме" required></textarea>
         </p>
         <button type="submit">Отправить</button>
       </form>
