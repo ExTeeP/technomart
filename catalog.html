@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог магазина «Техномарт»</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="page-header">
@@ -81,13 +82,18 @@
       <section>
         <h2>Фильтр:</h2>
       <section>
-        <h2>Цена:</h2>
-        <p>
-          <span>Я бегунок ценника, я форма</span>
-        </p>
-        <p>
-          <span>0</span> - <span>3000</span>
-        </p>
+        <p>Цена:</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <span><img src="img/filter-button.svg" width="20" height="22" alt=""></span>
+            <span><img src="img/filter-button.svg" width="20" height="22" alt=""></span>
+          </p>
+          <p>
+            <input type="text" name="min-price" value="0">
+            <span>-</span>
+            <input type="text" name="max-price" value="30000"
+          </p>
+        </form>
       </section>
         <section>
           <form action="https://echo.htmlacademy.ru" method="post">
