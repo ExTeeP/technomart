@@ -82,56 +82,47 @@
       <section>
         <h2>Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <section>
-            <h2>Цена:</h2>
+          <fieldset>
+            <legend>Цена:</legend>
               <p>
                 <input type="text" name="min-price" value="0">
                 <span>-</span>
-                <input type="text" name="max-price" value="30000">
-              </p>
-          </section>
-          <section>
-            <h2>Производители:</h2>
-              <fieldset>
-                <legend>Производители:</legend>
-                <ul>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="BOSCH" value="BOSCH" checked>BOSCH</label></li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Interskol" value="Интерскол">Интерскол</label></li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Makita" value="Makita" checked>Makita</label></li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="DeWalt" value="DeWalt">DeWalt</label></li>
-                  <li>
-                    <label>
-                      <input type="checkbox" name="Hitachi" value="Hitachi">Hitach</label></li>
-                </ul>
-              </fieldset>
-          </section>
-          <section>
-              <h2>Питание:</h2>
-              <fieldset>
-                <legend>Питание:</legend>
-                <ul>
-                  <li>
-                    <label>
-                      <input type="radio" name="power" value="1" checked>
-                      <img src="img/radio-on.svg" width="25" height="25" alt="Выбрано">Аккумуляторные</label></li>
-                  <li>
-                    <label>
-                      <input type="radio" name="power" value="2">
-                      <img src="img/radio-off.svg" width="25" height="25" alt="Не выбрано">Сетевые</label></li>
-                </ul>
-              </fieldset>
-          </section>
-        <p>
-          <button type="submit">Показать:</button>
-        </p>
+                <input type="text" name="max-price" value="30000"></p>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="checkbox" name="BOSCH" value="BOSCH" checked>BOSCH</label></li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Interskol" value="Интерскол">Интерскол</label></li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Makita" value="Makita" checked>Makita</label></li>
+              <li>
+                <label>
+                  <input type="checkbox" name="DeWalt" value="DeWalt">DeWalt</label></li>
+              <li>
+                <label>
+                  <input type="checkbox" name="Hitachi" value="Hitachi">Hitach</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="power" value="1" checked>Аккумуляторные</label></li>
+              <li>
+                <label>
+                  <input type="radio" name="power" value="2">Сетевые</label></li>
+            </ul>
+          </fieldset>
+          <p>
+            <button type="submit">Показать:</button>
+          </p>
         </form>
       </section>
       <section>
