@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Cuprum, "PT Sans", sans-serif;
+  color: #000;
+}
+
+a {
+text-decoration: none;
+}
+
+
+.logo-top {
+  width: 220px;
+  height: 47px;
+
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  text-align: center;
+}
+
+
+
+/*букву "и" нужно перенести на 3-ю строку */
+
+.title {
+  width: 196px;
+  height: 60px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-address {
+  width: 250px;
+  height: 13px;
+
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #32425c;
+}
+
+.phone {
+  width: 270px;
+  height: 45px;
+  border: solid 3px #ffffff;
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-size: 17px;
+  color: #fff;
+}
+
+.user-navigation a {
+  font-size: 21px;
+  color: #000;
+  background-color: #fff;
+}
