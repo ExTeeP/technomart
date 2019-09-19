@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: Cuprum, "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000;
 }
 
@@ -16,13 +16,12 @@ text-decoration: none;
   background-color: #ee3643;
 }
 
-/*букву "и" нужно перенести на 3-ю строку */
 
 .title {
   font-size: 16px;
+  line-height: 23px;
   font-weight: normal;
   font-style: italic;
-  line-height: 23px;
   color: #ee3643;
   margin: 0;
 }
@@ -87,7 +86,7 @@ input[type="search"] {
   border: none;
 }
 
-.buy a {
+.header-buy a {
   background-color: #63a63e;
 }
 
@@ -103,14 +102,14 @@ input[type="search"] {
 }
 
 .info:nth-child(2), .info:nth-child(3), .contacts:nth-child(2) {
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 
 .partnership {
   font-size: 18px;
-  font-weight: bold;
   line-height: 20px;
+  font-weight: bold;
   list-style: none;
 }
 
@@ -227,7 +226,7 @@ input[type="search"] {
 }
 
 .filter-button {
-  font=src: 13px;
+  font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -236,7 +235,7 @@ input[type="search"] {
   list-style: none;
 }
 
-.name-item span {
+.name-item .name {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -251,12 +250,12 @@ input[type="search"] {
   font-weight: bold;
 }
 
-.price-item span {
+.price-item .price {
   color: #fff;
   background-color: #ee3643;
 }
 
-.price-item del {
+.price-item .old-price {
   color: #999;
 }
 
