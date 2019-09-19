@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: Cuprum, "PT Sans", sans-serif;
+  font-family: Cuprum, "Arial", sans-serif;
   color: #000;
 }
 
@@ -12,42 +12,35 @@ text-decoration: none;
 
 
 .logo-top {
-  width: 220px;
-  height: 47px;
-
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-  text-align: center;
 }
-
-
 
 /*букву "и" нужно перенести на 3-ю строку */
 
 .title {
-  width: 196px;
-  height: 60px;
-
   font-size: 16px;
   font-weight: normal;
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
+  margin: 0;
+}
+
+.page-title {
+  color: #32425c;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .header-address {
-  width: 250px;
-  height: 13px;
-
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: #32425c;
 }
 
 .phone {
-  width: 270px;
-  height: 45px;
   border: solid 3px #ffffff;
   font-size: 21px;
   color: #ee3643;
@@ -71,4 +64,224 @@ text-decoration: none;
   font-size: 21px;
   color: #000;
   background-color: #fff;
+}
+
+.header-top {
+  background-color: #293449;
+}
+
+.header-top a {
+  color: #fff;
+}
+
+.search button {
+  background-color: #293449;
+  border: none;
+}
+
+input[type="search"] {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  border: none;
+}
+
+.buy a {
+  background-color: #63a63e;
+}
+
+.full-cart a {
+  background-color: #ee3643;
+}
+
+.info h2,
+.contacts h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.info:nth-child(2), .info:nth-child(3), .contacts:nth-child(2) {
+  font-family: "PT Sans","Arial", sans-serif;
+}
+
+
+.partnership {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  list-style: none;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.footer-up {
+  background-color: #32425c;
+}
+
+.footer-down {
+  background-color: #293449;
+}
+
+.logo-down {
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.footer-address {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  font-weight: normal;
+}
+
+.footer-address a {
+  color: #f3f7f9;
+}
+
+.footer-top-navigation,
+.footer-bottom-navigation {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-top-navigation a {
+  color: #f1f5f7;
+}
+
+.footer-bottom-navigation a {
+  color: #ffd180;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.social {
+  list-style: none;
+}
+
+.social a {
+  background-color: #212a3a;
+}
+
+
+.footer-feedback,
+.footer-developed {
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer-feedback a,
+.footer-developed a {
+  color: #ffd180;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: #000;
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-field {
+  border: none;
+}
+
+.form-legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-developed,
+.form-power {
+  list-style: none;
+}
+
+.form-developed label,
+.form-power label {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.filter-button {
+  font=src: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.catalog-item {
+  list-style: none;
+}
+
+.name-item span {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.price-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.price-item span {
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.price-item del {
+  color: #999;
+}
+
+.item-overlay {
+  list-style: none;
+}
+
+.item-overlay .button-buy {
+  color: #fff;
+  background-color: #63a63e;
+}
+
+.item-overlay .button-bookmark {
+  color: #32425c;
+  background-color: #fff;
+  border: solid 3px #63a63e;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
