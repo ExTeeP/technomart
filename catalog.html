@@ -60,7 +60,6 @@
       </div>
     </header>
     <main>
-      <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html" aria-label="Главная">
           <img src="img/icon-home.svg" width="14" height="12" alt="" aria-hidden="true"></a>
@@ -69,20 +68,25 @@
         <li><a href="">Инструмент</a></li>
         <li>Перфораторы</li>
       </ul>
+      <div class="drill-background">
+        <h1 class="page-title">Перфораторы</h1>
+      </div>
       <section class="sorting">
-        <h2>Сортировка:</h2>
-        <ul>
-          <li><a href="">По цене</a></li>
-          <li><a href="">По типу</a></li>
-          <li><a href="">По функционалу</a></li>
-          <li><a href="" aria-label="По возрастанию">
+        <h2 class="sorting-title">Сортировка:</h2>
+        <ul class="sorting-list">
+          <li><a class="sorting-button active" href="">По цене</a></li>
+          <li><a class="sorting-button" href="">По типу</a></li>
+          <li><a class="sorting-button" href="">По функционалу</a></li>
+          <li><a class="sorting-up active" href="" aria-label="По возрастанию">
             <img src="img/icon-up-dir.svg" width="11" height="10" alt="" aria-hidden="true"></a></li>
-          <li><a href="" aria-label="По убыванию">
+          <li><a class="sorting-down" href="" aria-label="По убыванию">
             <img src="img/icon-down-dir.svg" width="11" height="10" alt="" aria-hidden="true"></a></li>
         </ul>
       </section>
-      <section class="filter-field">
-        <h2>Фильтр:</h2>
+      <section class="filter">
+        <div class="filter-background"
+          <h2 class="filter-title">Фильтр:</h2>
+        </div>
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-field">
             <legend class="form-legend">Цена:</legend>
@@ -127,9 +131,9 @@
           </p>
         </form>
       </section>
-      <section>
+      <section class="catalog">
         <h2 class="visually-hidden">Каталог перфораторов</h2>
-        <ul class="catalog-item">
+        <ul class="catalog-items">
           <li>
             <article>
               <h3 class="name-item">
@@ -294,15 +298,15 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li><a>1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">Следующая</a></li>
+          <li><a class="pagination-item active">1</a></li>
+          <li><a class="pagination-item" href="">2</a></li>
+          <li><a class="pagination-item" href="">3</a></li>
+          <li><a class="pagination-item" href="">Следующая</a></li>
         </ul>
       </section>
-      <aside>
-        <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+      <aside class="aside">
+        <h2 class="aside-title">Пара слов о перфораторах</h2>
+        <p class="text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
           ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </aside>

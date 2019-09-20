@@ -10,6 +10,9 @@ a {
 text-decoration: none;
 }
 
+.page-header {
+  background-color: #f4f7f9;
+}
 
 .logo-top {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
@@ -18,12 +21,26 @@ text-decoration: none;
 
 
 .title {
+  margin: 0;
   font-size: 16px;
   line-height: 23px;
   font-weight: normal;
   font-style: italic;
   color: #ee3643;
-  margin: 0;
+}
+
+.text {
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.section-title{
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f9f5f0;
 }
 
 .page-title {
@@ -94,17 +111,44 @@ input[type="search"] {
   background-color: #ee3643;
 }
 
-.info h2,
-.contacts h2 {
+.drill-background {
+  background-color: #f2f6f8;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting-title {
+  color: #000;
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-button {
+  color: rgba(0, 0, 0, 0.3);
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting-button.active {
+  color: #ee3643;
+}
+
+.info-title,
+.contacts-title {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 30px;
 }
-
-.info:nth-child(2), .info:nth-child(3), .contacts:nth-child(2) {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
 
 .partnership {
   font-size: 18px;
@@ -204,6 +248,15 @@ input[type="search"] {
   border: none;
 }
 
+.form-field input[type="text"] {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #000;
+  background-color: #f7f3ec;
+  border: none;
+}
+
 .form-legend {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -225,13 +278,26 @@ input[type="search"] {
     text-transform: uppercase;
 }
 
+.filter-background {
+  background-color: #f7f3ec;
+}
+
+.filter-title {
+  color: #000;
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .filter-button {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.catalog-item {
+.catalog-items {
   list-style: none;
 }
 
@@ -272,6 +338,153 @@ input[type="search"] {
   color: #32425c;
   background-color: #fff;
   border: solid 3px #63a63e;
+}
+
+.mein-menu {
+
+}
+
+.menu-item {
+  color: #fff;
+}
+
+.menu-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.menu-material {
+  background-color: #ffbf47;
+}
+
+.menu-tool {
+  background-color: #3bbce3;
+}
+
+.menu-equipment {
+  background-color: #dc91d8;
+}
+
+.menu-sale {
+  background-color: #8ed78f;
+}
+
+.menu-delivery {
+  background-color: #ffc047;
+}
+
+.menu-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.slider-box {
+  background-color: #32425c;
+}
+
+.slider-title {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fff;
+}
+
+.slider-comment {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.slider-button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.manufacturer-items {
+  list-style: none;
+}
+
+.manufacturer-item {
+  width: 220px;
+  height: 145px;
+  text-align: center;
+  border: 1px solid #eaeaea;
+}
+
+.servise {
+  background-color: #f4f7f9;
+}
+
+.servise-title {
+  color: #000;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.servise-title .text {
+
+}
+
+.servise-list {
+  list-style: none;
+}
+
+.servise-button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  background-color: #32425c;
+}
+
+.servise-button-on {
+  color: #32425c;
+  background-color: #fff;
+}
+
+.servise-page-title {
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.servise-page-title .text {
+
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+
+.pagination-item.active {
+  color: #fff;
+  background-color: #ee3643;
+}
+
+.aside {
+  background-color: #f4f7f9;
+}
+
+.aside-title {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .visually-hidden {
