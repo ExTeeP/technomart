@@ -88,11 +88,11 @@ input[type="search"] {
   border: none;
 }
 
-.header-buy a {
+.header-buy {
   background-color: #63a63e;
 }
 
-.full-cart a {
+.full-cart {
   background-color: #ee3643;
 }
 
@@ -545,4 +545,37 @@ input[type="search"] {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* Флексы !!!! */
+
+.container {
+  min-height: 42px;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.header-up, .header-top {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo-top {
+  padding: 15px 55px;
+}
+
+.header-cart {
+  padding: 15px 25px 15px 50px;
+}
+
+.header-buy,
+.full-cart {
+  padding: 15px 20px;
+}
+
+.full-cart a {
+  margin-left: 10px;
 }
