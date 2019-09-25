@@ -159,6 +159,8 @@ input[type="search"] {
 }
 
 .address {
+  margin: 0;
+  padding-top: 4px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
