@@ -150,7 +150,9 @@ input[type="search"] {
 .phone {
   width: 270px;
   height: 45px;
-  padding: 13px 52px 11px 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: solid 3px #ffffff;
   font-size: 21px;
   color: #ee3643;
