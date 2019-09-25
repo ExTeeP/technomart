@@ -126,10 +126,10 @@ input[type="search"] {
 }
 
 .title {
-  width: 196px;
+  width: 200px;
   min-height: 60px;
-  margin-top: 8px;
-  margin-right: 71px;
+  margin-top: 0;
+  margin-right: 67px;
   margin-bottom: 0;
   margin-left: 53px;
   font-size: 16px;
