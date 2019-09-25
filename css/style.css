@@ -24,6 +24,86 @@ text-decoration: none;
 
 /* header */
 
+.main-header {
+  min-height: 320px;
+  margin-bottom: 59px;
+  background-color: #f4f7f9
+}
+
+.header-top {
+  height: 42px;
+  background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.logo-top {
+  width: 220px;
+  height: 47px;
+  margin: 0;
+  display: flex;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.logo-top a {
+  margin: auto;
+}
+
+.button-top {
+  width: 720px;
+  font-size: 17px;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-top a {
+  color: #fff;
+}
+
+.search {
+}
+
+.search button {
+  border: none;
+  background-color: #293449;
+}
+
+input[type="search"] {
+  border: none;
+  background-color: #293449;
+}
+
+.header-bookmark {
+  width: 150px;
+  height: 42px;
+  margin: auto;
+}
+
+.header-cart {
+  width: 150px;
+  height: 42px;
+  margin: auto;
+}
+
+.full-cart {
+  width: 150px;
+  height: 42px;
+  margin: auto;
+}
+
+.header-buy {
+  width: 150px;
+  height: 42px;
+  margin: auto;
+}
+
+/* прошлый код
 .page-header {
   background-color: #f4f7f9;
 }
@@ -165,7 +245,7 @@ input[type="search"] {
 .header-button a {
   color: #fff;
 }
-
+ */
 /* main */
 
 .breadcrumbs {
