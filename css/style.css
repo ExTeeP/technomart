@@ -28,10 +28,92 @@ text-decoration: none;
   background-color: #f4f7f9;
 }
 
+.container {
+  height: 42px;
+  background-color: #293449;
+  margin-bottom: 46px;
+}
+
+.header-main {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .logo-top {
+  width: 220px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:auto;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
+
+
+.header-button {
+  height: 42px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.header-button a {
+  color: #fff;
+}
+
+.search {
+  margin-left: 17px;
+  display: flex;
+}
+
+.search button {
+  background-color: #293449;
+  border: none;
+}
+
+input[type="search"] {
+  width: 250px;
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
+  background-color: #293449;
+  border: none;
+}
+
+.header-bookmark {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cart {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-cart {
+  background-color: #ee3643;
+}
+
+.header-buy {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #63a63e;
+}
+
 
 
 .title {
@@ -75,26 +157,6 @@ text-decoration: none;
   background-color: #fff;
 }
 
-.header-button {
-  background-color: #293449;
-}
-
-.search button {
-  background-color: #293449;
-  border: none;
-}
-
-input[type="search"] {
-  font-size: 17px;
-  line-height: 18px;
-  color: #fff;
-  background-color: #293449;
-  border: none;
-}
-
-.header-buy {
-  background-color: #63a63e;
-}
 
 .full-cart {
   background-color: #ee3643;
@@ -552,37 +614,3 @@ input[type="search"] {
 }
 
 /* Флексы !!!! */
-
-.container {
-  min-height: 42px;
-  background-color: #293449;
-}
-
-.header-main {
-  width: 940px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.logo-top {
-  width: 220px;
-  height: 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-  background-color: #ee3643;
-}
-
-
-.header-button {
-  width: 720px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.search {
-  margin-left: 17px;
-}
