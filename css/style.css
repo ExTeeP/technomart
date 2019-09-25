@@ -127,9 +127,11 @@ input[type="search"] {
 
 .title {
   width: 196px;
+  min-height: 60px;
   margin-top: 8px;
-  margin-left: 53px;
   margin-right: 71px;
+  margin-bottom: 0;
+  margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
   font-weight: normal;
@@ -190,14 +192,22 @@ input[type="search"] {
   align-items: center;
 }
 
-/* прошлый код
-
-.main-navigation {
-  background-color: #32425c;
+.header-down {
+  padding: 44px;
 }
 
-.site-navigation,
-.user-navigation {
+.main-navigation {
+  width: 940px;
+  height: 60px;
+  background-color: #32425c;
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.site-navigation {
+  padding-right: 55px;
+  padding-left: 52px;
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -206,8 +216,7 @@ input[type="search"] {
   color: #fff;
 }
 
-
-
+/* прошлый код
 
 .full-cart {
   background-color: #ee3643;
