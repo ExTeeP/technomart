@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -44,21 +40,20 @@ text-decoration: none;
 .logo-top {
   width: 220px;
   height: 47px;
-  margin: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 
-.logo-top a {
-  margin: auto;
-}
-
 .button-top {
   width: 720px;
+  height: 42px;
   font-size: 17px;
   line-height: 18px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -67,9 +62,11 @@ text-decoration: none;
 }
 
 .search {
+  display: flex;
 }
 
 .search button {
+  margin-left: 17px;
   border: none;
   background-color: #293449;
 }
@@ -82,25 +79,42 @@ input[type="search"] {
 .header-bookmark {
   width: 150px;
   height: 42px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-cart {
   width: 150px;
   height: 42px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-cart {
   width: 150px;
   height: 42px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-buy {
   width: 150px;
   height: 42px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-buy {
+  width: 150px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #63a63e;
 }
 
 /* прошлый код
@@ -191,7 +205,6 @@ input[type="search"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #63a63e;
 }
 
 
