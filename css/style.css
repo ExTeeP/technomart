@@ -14,6 +14,12 @@ a {
  text-decoration: none;
 }
 
+.list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .button {
   font-size: 14px;
   line-height: 18px;
@@ -21,6 +27,13 @@ a {
   background-color: #ee3643;
   text-transform: uppercase;
 }
+
+.container {
+  width: 940px;
+  display: flex;
+  margin: 0 auto;
+}
+
 
 /* header */
 
@@ -31,14 +44,9 @@ a {
 }
 
 .header-top {
-  height: 42px;
+  min-height: 42px;
   background-color: #293449;
-}
-
-.container {
-  width: 940px;
-  display: flex;
-  margin: 0 auto;
+  margin-bottom: 46px;
 }
 
 .logo-top {
@@ -160,7 +168,7 @@ input[type="search"]:hover {
 }
 
 .header-middle {
-  padding-top: 46px;
+  padding-bottom: 34px;
 }
 
 .title {
@@ -237,13 +245,12 @@ input[type="search"]:hover {
 }
 
 .header-down {
-  padding-top: 34px;
   padding-bottom: 60px;
 }
 
 .main-navigation {
   width: 940px;
-  height: 60px;
+  min-height: 60px;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
@@ -255,13 +262,18 @@ input[type="search"]:hover {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  align-items: stretch;
+}
+
+.site-navigation li {
+  display: flex;
+  align-items: stretch;
 }
 
 .site-navigation a {
-  height: 60px;
-  padding: 20px 31px;
+  padding: 0 31px;
+  display: flex;
+  align-items: center;
   font-size: 17px;
   color: #fff;
 }
@@ -277,7 +289,7 @@ input[type="search"]:hover {
 /* main */
 
 .breadcrumbs {
-  list-style: none;
+
 }
 
 .breadcrumbs,
@@ -305,28 +317,18 @@ input[type="search"]:hover {
 
 .menu-wrapper {
   width: 940px;
-  min-height: 410px;
+  min-height: 409px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
 }
 
-.container-menu {
+.right-menu-wrapper {
+  height: 266px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.menu-card-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-.menu-icon-wrapper {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
     /* Карточки меню */
@@ -335,6 +337,10 @@ input[type="search"]:hover {
   width: 300px;
   height: 123px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
   color: #fff;
 }
 
@@ -345,6 +351,7 @@ input[type="search"]:hover {
 
 .new-flag {
   position: absolute;
+  top: 0;
   left: 240px;
 }
 
@@ -366,9 +373,7 @@ input[type="search"]:hover {
 
 .menu-item-title {
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 13px;
-  margin-left: 20px;
+  margin: 0;
   font-weight: bold;
   line-height: 30px;
 }
@@ -379,8 +384,6 @@ input[type="search"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 22px;
-  margin-left: 25px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -396,25 +399,22 @@ input[type="search"]:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slider-wrapper {
-  width: 940px;
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
+
 
 .slider-box {
   width: 620px;
   height: 266px;
-  position: relative;
   display: flex;
-  flex-direction: column;
   background-color: #32425c;
 }
 
+.slider {
+  display: flex;
+  flex-direction: column;
+}
+
 .slider-title {
-  z-index: 1;
-  margin: 27px 0 0 24px;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 36px;
@@ -422,23 +422,19 @@ input[type="search"]:hover {
 }
 
 .slider-comment {
-  z-index: 1;
-  margin: 8px 0 0 24px;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
 }
 
 .slider-image {
-  position: absolute;
   margin: 0;
 }
 
 .slider-button {
-  z-index: 1;
   width: 195px;
   height: 38px;
-  margin: 106px 0 22px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,29 +457,18 @@ input[type="search"]:hover {
 .button-left {
   width: 22px;
   height: 40px;
-  position: absolute;
-  top: 114px;
-  left: 25px;
-  z-index: 0;
   border: none;
 }
 
 .button-right {
   width: 22px;
   height: 40px;
-  position: absolute;
-  top: 114px;
-  right: 20px;
-  z-index: 0;
   border: none;
 }
 
 .slider-dots-1 {
   width: 10px;
   height: 10px;
-  position: absolute;
-  bottom: 36px;
-  left: 295px;
   border: 2px solid #fff;
   border-radius: 5px;
   background-color: #fff;
@@ -492,9 +477,6 @@ input[type="search"]:hover {
 .slider-dots-2 {
   width: 10px;
   height: 10px;
-  position: absolute;
-  bottom: 36px;
-  right: 295px;
   border: 2px solid #fff;
   border-radius: 5px;
   background-color: #ee3643;
@@ -516,7 +498,7 @@ input[type="search"]:hover {
 }
 
 .catalog-items {
-  list-style: none;
+
 }
 
 .name-item .name {
@@ -544,7 +526,7 @@ input[type="search"]:hover {
 }
 
 .item-overlay {
-  list-style: none;
+
 }
 
 .item-overlay .button-buy {
@@ -565,7 +547,7 @@ input[type="search"]:hover {
 }
 
 .manufacturer-items {
-  list-style: none;
+
 }
 
 .manufacturer-item {
@@ -589,7 +571,7 @@ input[type="search"]:hover {
 }
 
 .service-list {
-  list-style: none;
+
 }
 
 .service-button {
@@ -634,7 +616,6 @@ input[type="search"]:hover {
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
-  list-style: none;
 }
 
 /* Секция */
@@ -666,7 +647,7 @@ input[type="search"]:hover {
 }
 
 .sorting-list {
-  list-style: none;
+
 }
 
 .sorting-button {
@@ -724,7 +705,7 @@ input[type="search"]:hover {
 
 .form-developed,
 .form-power {
-  list-style: none;
+
 }
 
 .form-developed label,
@@ -742,7 +723,7 @@ input[type="search"]:hover {
 }
 
 .pagination-list {
-  list-style: none;
+
 }
 
 .pagination-item {
@@ -789,6 +770,7 @@ input[type="search"]:hover {
 .logo-down {
   width: 220px;
   height: 68px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -799,7 +781,6 @@ input[type="search"]:hover {
 .footer-address {
   width: 322px;
   min-height: 40px;
-  padding-top: 32px;
   padding-bottom: 53px;
   margin: 0;
   font-size: 18px;
@@ -815,12 +796,13 @@ input[type="search"]:hover {
 .footer-navigation-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
+  padding-top: 31px;
 }
 
 .footer-navigation {
   display: flex;
   justify-content: flex-end;
-  list-style: none;
   font-size: 18px;
   line-height: 24px;
   padding: 0;
@@ -828,11 +810,11 @@ input[type="search"]:hover {
 }
 
 .footer-top-navigation {
-  padding-top: 31px;
+  padding-bottom: 44px;
 }
 
 .footer-bottom-navigation {
-  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
 .footer-top-navigation a {
@@ -883,7 +865,6 @@ input[type="search"]:hover {
 
 .social {
   display: flex;
-  list-style: none;
   padding-left: 0;
   margin: 0;
 }
