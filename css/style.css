@@ -1066,6 +1066,10 @@ input[type="search"]:hover {
 }
 
 .social li {
+  display: flex;
+}
+
+.social a {
   width: 42px;
   height: 42px;
   display: flex;
@@ -1075,8 +1079,12 @@ input[type="search"]:hover {
   background-color: #212a3a;
 }
 
-.social a {
-  background-color: #212a3a;
+.social a:hover {
+  background-color: #ee3643;
+}
+
+.social a:active {
+  background-color: #ee3643;
 }
 
 .footer-feedback-wrapper {
@@ -1097,6 +1105,17 @@ input[type="search"]:hover {
 .footer-feedback a,
 .footer-developed a {
   color: #ffd180;
+}
+
+.footer-feedback a:hover,
+.footer-developed a:hover {
+  text-decoration: underline;
+}
+
+.footer-feedback a:active,
+.footer-developed a:active {
+  text-decoration: none;
+  color: #ee3643;
 }
 
 /* работа с текстом и заголовками */
