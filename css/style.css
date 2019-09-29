@@ -632,9 +632,7 @@ input[type="search"]:hover {
 }
 
 .manufacturer-item {
-  width: 220px;
-  height: 145px;
-  border: 1px solid #eaeaea;
+  display: flex;
 }
 
 .manufacturer-item a {
@@ -643,6 +641,7 @@ input[type="search"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #eaeaea;
 }
 
 .manufacturer-item:hover {
@@ -721,6 +720,17 @@ input[type="search"]:hover {
 }
 
 .service-button-active {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  color: #32425c;
+  background-color: #fff;
+}
+
+.service-button:hover {
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+ background-color: #293449;
+}
+
+.service-button:active {
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   color: #32425c;
   background-color: #fff;
