@@ -160,6 +160,15 @@ input[type="search"]:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ee3643;
+}
+
+.full-cart:hover {
+  background-color: #ca2c37;
+}
+
+.full-cart:active {
+  background: #ba2732;
 }
 
 .header-buy {
