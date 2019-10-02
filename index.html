@@ -30,8 +30,9 @@
         <div class="container">
           <h1 class="title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <div class="header-address">
-            <a class="phone" href="tel:+78125550555">
-             <img src="img/icon-phone.svg" width="19" height="19" alt="" aria-hidden="true">+7 (812) 555-05-55</a>
+            <p class="phone">
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
             <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           </div>
           <div class="user-menu">
@@ -66,7 +67,6 @@
               <h3 class="menu-item-title">Материалы</h3>
               <a class="menu-button" href="">на любой вкус</a>
               <img src="img/icon-material.svg" width="44" height="65" alt="Материалы">
-              <img class="new-flag" src="img/new-flag.png" width="60" height="59" alt="Новый товар">
             </div>
             <div class="menu-item menu-tool">
               <h3 class="menu-item-title">Инструмент</h3>
@@ -185,8 +185,7 @@
                 </article>
               </li>
               <li>
-                <article class="card-item">
-                  <img class="visually-hidden" src="img/new-flag.png" width="60" height="59" alt="Новый товар">
+                <article class="card-item new">
                   <h3 class="name-item">
                     <a href="">
                       <span class="name">Перфоратор BOSCH</span>
@@ -265,10 +264,23 @@
               <li><a class="service-button" href="">Гарантия</a></li>
               <li><a class="service-button" href="">Кредит</a></li>
             </ul>
-            <div class="service-page-wrapper">
-              <h4 class="service-page-title">Доставка</h4>
-              <p class="text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-              <img class="service-background-image" src="img/delivery.png" width="468" height="261" alt="Синий грузовичок">
+            <ul class="service-page-wrapper list-style">
+              <li>
+                <h4 class="service-page-title">Доставка</h4>
+                <p class="text">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                <img class="service-background-image" src="img/delivery.png" width="468" height="261" alt="Синий грузовичок">
+              </li>
+              <li class="visually-hidden">
+                <h4 class="service-page-title">Гарантия</h4>
+                <p class="text">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+                <img class="service-background-image" src="img/guarantee.png" width="389" height="283" alt="Приз за стопроцентную гарантию">
+              </li>
+              <li class="visually-hidden">
+                <h4 class="service-page-title">Кредит</h4>
+                <p class="text">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
+                <button class="button button-credit">Отправить заявку</button>
+                <img class="service-background-image" src="img/credit.png" width="465" height="285" alt="Кредитный договор">
+              </li>
             </div>
           </div>
         </div>
