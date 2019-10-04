@@ -805,16 +805,21 @@ input[type="search"]:active {
   color: #a9a9a9;
 }
 
-.item-overlay {
+.card-item .item-overlay {
   width: 218px;
   height: 170px;
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
 }
+
+.card-item:hover .item-overlay {
+  display: flex;
+}
+
 .item-overlay li {
   margin: 0;
   margin-bottom: 8px;
@@ -1630,7 +1635,7 @@ input[type="search"]:active {
 .form-item input {
   height: 38px;
   padding: 0 15px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 2px solid #dee3e4;
   background-color: #ffffff;
 }
@@ -1639,7 +1644,7 @@ input[type="search"]:active {
   height: 114px;
   padding: 0 15px;
   resize: none;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 2px solid #dee3e4;
   background-color: #ffffff;
 }
