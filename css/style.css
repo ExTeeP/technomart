@@ -217,10 +217,10 @@ input[type="search"]:active {
 }
 
 .title {
-  width: 196px;
+  width: 200px;
   min-height: 60px;
   margin: 0;
-  margin-right: 67px;
+  margin-right: 63px;
   margin-left: 53px;
   font-size: 16px;
   line-height: 23px;
@@ -239,31 +239,18 @@ input[type="search"]:active {
 .phone {
   width: 270px;
   height: 45px;
-  margin: 0;
+  padding: 0 49px 0 71px;
   position: relative;
   border: 3px solid #ffffff;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.phone a {
-  display: inline-block;
-  width: 166px;
-  text-align: right;
   font-size: 21px;
   color: #ee3643;
 }
 
-.phone::before {
-  content: "";
+.phone img {
   position: absolute;
   left: 15px;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
 .address {
@@ -314,6 +301,7 @@ input[type="search"]:active {
 
 .user-logout {
   width: 299px;
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -324,7 +312,8 @@ input[type="search"]:active {
 }
 
 .user-logout img:last-child {
-  margin-right: 10px;
+  position: absolute;
+  right: 10px;
 }
 
 .user-item:hover,
@@ -621,22 +610,23 @@ input[type="search"]:active {
   z-index: 1;
 }
 
-.button-left {
-  position: absolute;
-  top: 113px;
-  left: 20px;
+.button-left,
+.button-right {
   border: none;
   background: transparent;
   cursor: pointer;
 }
 
+.button-left {
+  position: absolute;
+  top: 113px;
+  left: 20px;
+}
+
 .button-right {
   position: absolute;
   top: 113px;
-  right: 05px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
+  right: 15px;
 }
 
 .slider-dots-1 {
@@ -649,6 +639,7 @@ input[type="search"]:active {
   border: 2px solid #fff;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .slider-dots-2 {
@@ -661,6 +652,7 @@ input[type="search"]:active {
   border: 2px solid #fff;
   border-radius: 50%;
   background-color: #ee3643;
+  cursor: pointer;
 }
 
 .slider-1 {
@@ -825,6 +817,7 @@ input[type="search"]:active {
   height: 38px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -834,10 +827,16 @@ input[type="search"]:active {
 }
 
 .button-buy {
+  position: relative;
   border: none;
   box-shadow: inset 0px -3px #367315;
   color: #fff;
   background-color: #63a63e;
+}
+
+.button-buy img {
+  position: absolute;
+  left: 12px;
 }
 
 .button-buy:hover,
@@ -1006,11 +1005,51 @@ input[type="search"]:active {
 
 .service-page-wrapper {
   width: 700px;
+}
+
+.delivery-page {
   min-height: 280px;
   position: relative;
   padding-left: 80px;
   display: flex;
   flex-direction: column;
+}
+
+.guarantee-page {
+  min-height: 280px;
+  position: relative;
+  padding-left: 80px;
+  display: none;
+  flex-direction: column;
+}
+
+.credit-page {
+  min-height: 280px;
+  position: relative;
+  padding-left: 80px;
+  display: none;
+  flex-direction: column;
+}
+
+.delivery-page .text {
+  width: 275px;
+  margin: 0;
+  padding-bottom: 27px;
+  z-index: 1;
+}
+
+.guarantee-page .text {
+  width: 379px;
+  margin: 0;
+  padding-bottom: 27px;
+  z-index: 1;
+}
+
+.credit-page .text {
+  width: 279px;
+  margin: 0;
+  padding-bottom: 27px;
+  z-index: 1;
 }
 
 .service-page-title {
@@ -1024,9 +1063,7 @@ input[type="search"]:active {
 }
 
 .service-page-wrapper .text {
-  margin: 0;
-  padding-bottom: 27px;
-  z-index: 1;
+
 }
 
 .service-background-image {
@@ -1637,7 +1674,7 @@ input[type="search"]:active {
 
 .form-item textarea {
   height: 114px;
-  padding: 0 15px;
+  padding: 10px 15px;
   resize: none;
   border-radius: 3px;
   border: 2px solid #dee3e4;
