@@ -20,9 +20,9 @@
                 <img src="img/icon-search.svg" width="19" height="19" alt="" aria-hidden="true"></button>
             </form>
           <a class="header-bookmark" href="">
-            <img src="img/icon-bookmark.svg" width="14" height="16" alt="" aria-label="true">Закладки: 0</a>
+            <img src="img/icon-bookmark.svg" width="14" height="16" alt="" aria-hidden="true">Закладки: 0</a>
           <a class="header-cart" href="">
-            <img src="img/icon-cart.svg" width="15" height="15" alt="" aria-label="true">Корзина: 0</a>
+            <img src="img/icon-cart.svg" width="15" height="15" alt="" aria-hidden="true">Корзина: 0</a>
           <a class="header-buy" href="">Оформить заказ</a>
         </div>
       </div>
@@ -79,8 +79,16 @@
               <img src="img/icon-equipment.svg" width="78" height="62" alt="Техника">
             </div>
             <div class="slider-box">
-              <ul class="list-style">
-                <li class="slider">
+              <ul class="list-style" aria-label="Слайдер">
+                <li class="slider slider-1">
+                  <div>
+                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-comment">Настоящие мужские игрушки</p>
+                  </div>
+                  <img class="slider-image" src="img/slider-image-2.jpg" width="620" height="266" alt="Мужчина-рабочий сверлит в стене перфоратором">
+                  <a class="button slider-button" href="">Открыть каталог</a>
+                </li>
+                <li class="slider slider-2">
                   <div>
                     <h3 class="slider-title">Дрели</h3>
                     <p class="slider-comment">Соседям в радость!</p>
@@ -88,31 +96,23 @@
                   <img class="slider-image" src="img/slider-image-1.jpg" width="620" height="266" alt="Мужчина-рабочий сверлит в стене дрелью">
                   <a class="button slider-button" href="">Открыть каталог</a>
                 </li>
-                <li class="visually-hidden">
-                  <div class="slider">
-                    <h3 class="slider-title">Перфораторы</h3>
-                    <p class="slider-comment">Настоящие мужские игрушки</p>
-                    <img src="img/slider-image-2.jpg" width="620" height="266" alt="Мужчина-рабочий сверлит в стене перфоратором">
-                    <a class="button slider-button" href="">Открыть каталог</a>
-                  </div>
-                </li>
               </ul>
-              <ul class="list-style button-slider-box">
+              <ul class="list-style" aria-label="Следующий или предыдущий слайдер">
                 <li>
-                  <button type="button" class="button-left">
+                  <button type="button" class="button-left" aria-label="Предыдущий слайдер">
                   <img src="img/icon-left.svg" width="22" height="40" alt=""></button>
                 </li>
                 <li>
-                  <button type="button" class="button-right">
+                  <button type="button" class="button-right" aria-label="Следующий слайдер">
                   <img src="img/icon-right.svg" width="22" height="40" alt=""></button>
                 </li>
               </ul>
-              <ul class="list-style dots-slider-box">
+              <ul class="list-style" aria-label="Навигация по слайдеру">
                 <li>
-                  <button type="button" class="slider-dots-1"></button>
+                  <button type="button" class="slider-dots-1" aria-label="К слайдеру 1"></button>
                 </li>
                 <li>
-                  <button type="button" class="slider-dots-2"></button>
+                  <button type="button" class="slider-dots-2" aria-label="К слайдеру 2"></button>
                 </li>
               </ul>
             </div>

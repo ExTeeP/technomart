@@ -621,11 +621,6 @@ input[type="search"]:active {
   z-index: 1;
 }
 
-.buuton-slider-box {
-  width: 620px;
-  height: 266px;
-}
-
 .button-left {
   position: absolute;
   top: 113px;
@@ -644,33 +639,33 @@ input[type="search"]:active {
   cursor: pointer;
 }
 
-.dots-slider-box {
-  width: 620px;
-  height: 266px;
-}
-
 .slider-dots-1 {
   width: 10px;
   height: 10px;
+  padding: 0;
   position: absolute;
-  left: 295px;
   bottom: 36px;
+  left: 295px;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 50%;
   background-color: #fff;
 }
 
 .slider-dots-2 {
   width: 10px;
   height: 10px;
-  bottom: 36px;
+  padding: 0;
   position: absolute;
+  bottom: 36px;
   right: 295px;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 50%;
   background-color: #ee3643;
 }
 
+.slider-1 {
+  display: none;
+}
 
 /* Секция */
 
