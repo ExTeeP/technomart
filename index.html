@@ -376,31 +376,33 @@
         </div>
       </div>
     </footer>
-    <section class="visually-hidden">
+    <section class="container modal-map">
       <h2 class="visually-hidden">Как проехать</h2>
       <img src="img/map-big.jpg" width="940" height="446" alt="Адрес нашего магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8">
-      <button type="button" aria-label="Закрыть модальное окно">
+      <button class="button-close" type="button" aria-label="Закрыть модальное окно">
         <img src="img/form-close.svg" width="21" height="21" alt="" aria-hidden="true">
       </button>
     </section>
-    <section class="visually-hidden">
+    <section class="container modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-item">
           <label for="name-field">Ваше имя:</label>
           <input type="text" name="name" value="" id="name-field" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-item">
           <label for="email-field">Ваш e-mail:</label>
           <input type="email" name="email" value="" id="email-field" placeholder="email@example.com" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-item">
           <label for="feedback-field">Текст письма:</label>
           <textarea name="feedback" id="feedback-field" placeholder="В свободной форме" required></textarea>
-        </p>
-        <button type="submit">Отправить</button>
+        </div>
+        <div class="form-button">
+          <button class="button" type="submit">Отправить</button>
+        </div>
       </form>
-      <button type="button" aria-label="Закрыть модальное окно">
+      <button class="button-close" type="button" aria-label="Закрыть модальное окно">
         <img src="img/form-close.svg" width="21" height="21" alt="" aria-hidden="true">
       </button>
     </section>
