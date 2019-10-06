@@ -1303,6 +1303,7 @@ input[type="search"]:active {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .sorting {
