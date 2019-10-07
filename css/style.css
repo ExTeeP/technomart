@@ -1,5 +1,11 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -1316,20 +1322,94 @@ input[type="search"]:active {
 
 .form-developed li,
 .form-power li {
-  padding-bottom: 17px;
+  margin-bottom: 17px;
 }
 
 .form-developed label,
 .form-power label {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 15px;
-    line-height: 20px;
-    text-transform: uppercase;
+  padding-left: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .form-developed input[type="checkbox"],
 .form-power input[type="radio"] {
   opacity: 0;
+}
+
+.form-developed label::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: -2px;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border-radius: 3px;
+  border: 2px solid #c5c5c5;
+}
+
+.form-developed label::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  border-left: 4px solid #c5c5c5;
+  border-bottom: 4px solid #c5c5c5;
+  transform: rotate(-45deg);
+}
+
+.form-developed input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.form-developed input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.form-developed input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.form-power label::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: -3px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid #c5c5c5;
+}
+
+.form-power label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -9px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #c5c5c5;
+}
+
+.form-power input[type="radio"] + label::after {
+  content: none;
+}
+
+.form-power input[type="radio"]:checked + label::after {
+  content: "";
+}
+
+.form-power input[type="radio"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .filter-button {
