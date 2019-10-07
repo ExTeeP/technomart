@@ -1219,6 +1219,7 @@ input[type="search"]:active {
   line-height: 18px;
   text-transform: uppercase;
   color: #000;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -1238,15 +1239,50 @@ input[type="search"]:active {
   text-transform: uppercase;
 }
 
-.range {
-  min-height: 80px;
-  margin-bottom: 10px;
+.range-controls {
+  height: 80px;
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
-.price-range {
+.range-controls .scale {
+  width: 180px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-runner {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px rgba(171, 171, 171, 0.3);
+  border-radius: 50%;
+  border: 8px solid #fff;
+  background-color: rgb(171, 171, 171);
+  cursor: pointer;
+}
+
+.range-runner-min {
+  position: absolute;
+  left: 20px;
+}
+
+.range-runner-max {
+  position: absolute;
+  left: 162px;
+}
+
+.price-controls {
   height: 38px;
   display: flex;
   justify-content: space-between;
@@ -1260,8 +1296,9 @@ input[type="search"]:active {
   line-height: 18px;
   text-align: center;
   color: #000;
-  background-color: #f7f3ec;
+  border-radius: 3px;
   border: none;
+  background-color: #f7f3ec;
 }
 
 .price-dash {
@@ -1290,6 +1327,11 @@ input[type="search"]:active {
     text-transform: uppercase;
 }
 
+.form-developed input[type="checkbox"],
+.form-power input[type="radio"] {
+  opacity: 0;
+}
+
 .filter-button {
   min-width: 140px;
   height: 38px;
@@ -1313,6 +1355,7 @@ input[type="search"]:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 

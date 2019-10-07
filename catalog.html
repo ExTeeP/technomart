@@ -94,15 +94,19 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="form-field">
               <legend class="form-legend">Цена:</legend>
-              <div class="range">
-                <div class="runner-left"></div>
-                <div class="runner-line"></div>
-                <div class="runer-right"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-runner range-runner-min"></div>
+                <div class="range-runner range-runner-max"></div>
               </div>
-              <div class="price-range">
-                <input type="text" name="min-price" value="0">
+              <div class="price-controls">
+                <label class="min-price visually-hidden" for="min-range-price">от</label>
+                <input id="min-range-price" type="text" name="min-price" value="0">
                 <span class="price-dash">—</span>
-                <input type="text" name="max-price" value="30000">
+                <label class="max-price visually-hidden" for="max-range-price">до</label>
+                <input id="max-range-price" type="text" name="max-price" value="30000">
               </div>
             </fieldset>
             <div class="divider"></div>
