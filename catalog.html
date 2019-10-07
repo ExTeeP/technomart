@@ -16,7 +16,7 @@
             <form class="search" action="https://echo.htmlacademy.ru" method="get">
               <input type="search" name="search" placeholder="Поиск:">
               <button type="submit" aria-label="Поиск">
-                <img class="icon-search" src="img/icon-search.svg" width="19" height="19" alt="" aria-hidden="true"></button>
+                <img class="icon-search" src="img/icon-search.svg" width="17" height="17" alt="" aria-hidden="true"></button>
             </form>
           <a class="header-bookmark" href="">
             <img class="icon-bookmark" src="img/icon-bookmark.svg" width="14" height="16" alt="" aria-label="true">Закладки: 0</a>
@@ -80,7 +80,7 @@
       <div class="container breadcrumbs">
         <ul class="breadcrumbs-list list-style">
           <li><a href="index.html" aria-label="Главная">
-            <img src="img/icon-home.svg" width="14" height="12" alt="" aria-hidden="true"></a>
+            <img class="icon-home" src="img/icon-home.svg" width="14" height="12" alt="" aria-hidden="true"></a>
           </li>
           <li><a href="">Каталог</a></li>
           <li><a href="">Инструмент</a></li>
@@ -98,13 +98,13 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="range-runner range-runner-min"></div>
-                <div class="range-runner range-runner-max"></div>
+                <div tabindex="0" class="range-runner range-runner-min"></div>
+                <div tabindex="0" class="range-runner range-runner-max"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price visually-hidden" for="min-range-price">от</label>
                 <input id="min-range-price" type="text" name="min-price" value="0">
-                <span class="price-dash">—</span>
+                <div class="price-dash"></div>
                 <label class="max-price visually-hidden" for="max-range-price">до</label>
                 <input id="max-range-price" type="text" name="max-price" value="30000">
               </div>
