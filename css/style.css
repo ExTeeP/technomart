@@ -19,6 +19,11 @@ a {
  text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .list-style {
   list-style: none;
   margin: 0;
@@ -59,7 +64,7 @@ a {
 
 .main-header {
   min-height: 320px;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   background-color: #f4f7f9
 }
 
@@ -517,7 +522,7 @@ input[type="search"]:active {
 /* Главная сттраница */
   /* Секция */
 .main-menu {
-  padding-bottom: 53px;
+  padding-bottom: 33px;
 }
 
 .menu-wrapper {
@@ -530,7 +535,7 @@ input[type="search"]:active {
 }
 
 .right-menu-wrapper {
-  height: 266px;
+  min-height: 286px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -541,6 +546,7 @@ input[type="search"]:active {
 .menu-item {
   width: 300px;
   height: 123px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -616,6 +622,7 @@ input[type="search"]:active {
 .slider-box {
   width: 620px;
   height: 266px;
+  margin-bottom: 20px;
   position: relative;
   display: flex;
   background-color: #32425c;
@@ -758,17 +765,18 @@ input[type="search"]:active {
 }
 
 .catalog-items li {
+  display: flex;
+  align-items: stretch;
   margin-bottom: 20px;
 }
 
 .card-item {
-  position: relative;
   width: 220px;
-  height: 318px;
+  position: relative;
   border: solid 1px #eaeaea;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .card-item.new::before {
@@ -783,29 +791,17 @@ input[type="search"]:active {
   z-index: 1;
 }
 
-.card-item::after {
-  content: "";
-  position: absolute;
-  width: 141px;
-  height: 38px;
-  left: 43px;
-  bottom: 21px;
-  background-image: url("../img/item-button.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .card-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.card-item img {
-  order: -1;
-}
-
 .name-item {
+  min-height: 40px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0 30px;
+  flex-grow: 1;
 }
 
 .name-item .name {
@@ -818,10 +814,20 @@ input[type="search"]:active {
   color: #000;
 }
 
+.card-item-image {
+  width: 218px;
+  height: 170px;
+  margin-bottom: 5px;
+  order: -1;
+}
+
 .price-item {
+  min-height: 96px;
   margin: 0;
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
+  flex-direction: column-reverse;
   align-items: center;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -829,21 +835,33 @@ input[type="search"]:active {
   font-weight: bold;
 }
 
+.price-item::before {
+  content: "";
+  position: absolute;
+  bottom: 22px;
+  width: 141px;
+  height: 38px;
+  background-image: url("../img/item-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .price {
-  margin-top: 47px;
+  margin-top: 10px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   background-color: #ee3643;
-  z-index: 1;
   cursor: default;
+  z-index: 1;
 }
 
 .old-price {
-  position: absolute;
-  bottom: 70px;
-  order: -1;
+  margin:0;
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: #a9a9a9;
   cursor: default;
 }
@@ -929,7 +947,7 @@ input[type="search"]:active {
 
 /* Секция */
 .manufacturer {
-  padding-bottom: 85px;
+  padding-bottom: 65px;
 }
 
 .manufacturer .container {
@@ -946,6 +964,7 @@ input[type="search"]:active {
 
 .manufacturer-item {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .manufacturer-item a {
@@ -960,6 +979,7 @@ input[type="search"]:active {
 .manufacturer-item:hover,
 .manufacturer-item:focus {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  outline: none;
 }
 
 .manufacturer-item:active{
