@@ -149,7 +149,8 @@ input[type="search"]:focus {
   cursor: pointer;
 }
 
-button:hover .icon-search {
+button:hover .icon-search,
+button:focus .icon-search {
   opacity: 1;
 }
 
@@ -1020,8 +1021,8 @@ input[type="search"]:focus + button .icon-search {
 }
 
 .service-list {
-  position: relative;
   min-height: 183px;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -1032,7 +1033,7 @@ input[type="search"]:focus + button .icon-search {
   width: 10px;
   height: 279px;
   right: 0;
-  bottom: 43px;
+  top: -48px;
   background-image: url("../img/shadow.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1727,6 +1728,7 @@ input[type="search"]:focus + button .icon-search {
 
 .footer-navigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   font-size: 18px;
   line-height: 24px;
@@ -1888,6 +1890,7 @@ input[type="search"]:focus + button .icon-search {
 /* Модальные */
 
 .modal-map {
+  height: 446px;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
