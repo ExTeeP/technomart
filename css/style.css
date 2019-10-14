@@ -1,3 +1,5 @@
+/*Глобальные */
+
 html {
   box-sizing: border-box;
 }
@@ -59,8 +61,7 @@ img {
   margin: 0 auto;
 }
 
-
-/* header */
+/* Хеадер */
 
 .main-header {
   min-height: 320px;
@@ -68,10 +69,26 @@ img {
   background-color: #f4f7f9
 }
 
+/* Хедер-топ */
+
 .header-top {
   min-height: 42px;
   background-color: #293449;
   margin-bottom: 46px;
+}
+
+.header-top .container {
+  min-height: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-top a {
+  font-size: 17px;
+  line-height: 18px;
+  color: #fff;
 }
 
 .logo-top {
@@ -90,57 +107,70 @@ img {
 }
 
 .logo-top:active {
-  background: #ba2732;
-}
-
-.header-top .container {
-  width: 940px;
-  height: 42px;
-  font-size: 17px;
-  line-height: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-top a {
-  color: #fff;
+  background-color: #ba2732;
 }
 
 .search {
-  display: flex;
-  padding-left: 17px;
+  width: 270px;
+  position: relative;
 }
 
-.search:active {
+input[type="search"] {
+  width: 270px;
+  height: 42px;
+  padding-left: 49px;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  color: #fff;
+  background-color: #293449;
+  outline: none;
+}
+
+input[type="search"]:hover {
+  background-color: #212a3a;
+}
+
+input[type="search"]:focus {
+  color: #000;
   background-color: #fff;
 }
 
 .search button {
+  width: 17px;
+  height: 17px;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  left: 16px;
   order: -1;
   border: none;
-  background-color: transparent;
+  background-color: #293449;
   cursor: pointer;
 }
 
-.icon-search {
-  opacity: 0.3;
+button:hover .icon-search {
+  opacity: 1;
 }
 
-input[type="search"] {
-  min-width: 270px;
-  border: none;
-  background-color: #293449;
-  color: #fff;
+button:active .icon-search {
+  fill: #ee3643;
 }
 
-input[type="search"]:hover,
-input[type="search"]:focus {
+input[type="search"]:hover + button {
   background-color: #212a3a;
 }
 
-input[type="search"]:active {
+input[type="search"]:hover + button .icon-search {
+  opacity: 1;
+}
+
+input[type="search"]:focus + button {
   background-color: #fff;
+}
+
+input[type="search"]:focus + button .icon-search {
+  fill: #ee3643;
 }
 
 .header-bookmark {
@@ -252,6 +282,8 @@ input[type="search"]:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
 }
+
+/* Хедер-мидл */
 
 .header-middle {
   padding-bottom: 34px;
