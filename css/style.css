@@ -348,9 +348,9 @@ input[type="search"]:focus + button .icon-search {
   margin-bottom: 5px;
   margin-left: 10px;
   display: flex;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
   font-size: 21px;
   color: #000;
   background-color: #fff;
