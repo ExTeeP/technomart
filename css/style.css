@@ -207,7 +207,6 @@ input[type="search"]:focus + button .icon-search {
 .header-cart {
   width: 150px;
   height: 42px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,7 +238,6 @@ input[type="search"]:focus + button .icon-search {
 .full-cart {
   width: 150px;
   height: 42px;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,8 +289,9 @@ input[type="search"]:focus + button .icon-search {
 
 .title {
   width: 200px;
-  min-height: 60px;
+  min-height: 69px;
   margin: 0;
+  margin-top: 4px;
   margin-right: 63px;
   margin-left: 53px;
   font-size: 16px;
@@ -302,7 +301,7 @@ input[type="search"]:focus + button .icon-search {
   color: #ee3643;
 }
 
-.header-address {
+.header-contacts {
   width: 270px;
   display: flex;
   flex-direction: column;
@@ -328,7 +327,7 @@ input[type="search"]:focus + button .icon-search {
 
 .address {
   margin: 0;
-  padding-top: 4px;
+  padding: 4px 10px 0;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -336,15 +335,20 @@ input[type="search"]:focus + button .icon-search {
 
 .user-menu {
   width: 299px;
-  margin-left: 51px;
+  margin-left: 55px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-content: flex-start;
 }
 
 .user-item {
   height: 45px;
+  padding: 0 13px;
+  margin-bottom: 5px;
+  margin-left: 10px;
   display: flex;
+  flex-grow: 1;
   justify-content: center;
   align-items: center;
   font-size: 21px;
@@ -354,11 +358,9 @@ input[type="search"]:focus + button .icon-search {
 
 .user-login {
   width: 121px;
-  padding-right: 13px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 10px;
 }
 
 .user-login svg {
@@ -395,7 +397,7 @@ input[type="search"]:focus + button .icon-search {
 }
 
 .user-logout svg:first-child {
-  margin: 0 14px;
+  margin-right: 14px;
 }
 
 .user-logout svg:last-child {
@@ -414,17 +416,35 @@ input[type="search"]:focus + button .icon-search {
 
 .user-login-menu {
   width: 299px;
-  padding-top: 4px;
+  min-height: 18px;
   padding-right: 71px;
   padding-left: 17px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
+.user-login-menu li {
+  position: relative;
+}
+
+.user-login-menu li:nth-child(2n) {
+  padding-left: 31px;
+}
+
+.user-login-menu li:nth-child(2n)::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  border-radius: 5px;
+  border: 2px solid #32425c;
+}
+
 .user-login-menu a {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   text-decoration: underline;
   color: #32425c;
 }
@@ -439,8 +459,6 @@ input[type="search"]:focus + button .icon-search {
 }
 
 .menu-dot {
-  border-radius: 5px;
-  border: 2px solid #32425c;
 }
 
 .header-down {
@@ -1971,7 +1989,7 @@ input[type="search"]:focus + button .icon-search {
   position: fixed;
   top: 50%;
   left: 50%;
-  display: flex;
+  display: none;
   align-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
