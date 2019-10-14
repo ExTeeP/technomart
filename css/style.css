@@ -509,73 +509,8 @@ input[type="search"]:focus + button .icon-search {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Мэйн */
-
-.breadcrumbs {
-  position: relative;
-}
-
-.breadcrumbs-list {
-  display: flex;
-  position: absolute;
-  top: -39px;
-}
-
-.breadcrumbs-list li {
-  position: relative;
-}
-
-.breadcrumbs-list li:not(:first-child) {
-  margin-left: 40px;
-}
-
-.breadcrumbs-list li:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  left: -25px;
-  top: 6px;
-  border-left: 1px solid #c1c6ce;
-  border-bottom: 1px solid #c1c6ce;
-  transform: rotate(225deg);
-  /* на всякий случай
-  background-image: url("../img/icon-right-small.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  */
-}
-
-.breadcrumbs-list a {
-  color: #000;
-  font-family: "PT Sans", "Arial",  sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.breadcrumbs-list .icon-home {
-  margin-top: 4px;
-}
-
-.page-title {
-  width: 940px;
-  min-height: 89px;
-  margin: 0;
-  padding-right: 24px;
-  padding-left: 30px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #32425c;
-  background-color: #f2f6f8;
-}
-
 /* Главная сттраница */
-  /* Секция */
+  /* Секция меню */
 .main-menu {
   padding-bottom: 33px;
 }
@@ -596,7 +531,7 @@ input[type="search"]:focus + button .icon-search {
   justify-content: space-between;
 }
 
-    /* Карточки меню */
+/* Карточки меню */
 
 .menu-item {
   width: 300px;
@@ -1283,7 +1218,66 @@ input[type="search"]:focus + button .icon-search {
 }
 
 /* Страница каталога */
-/* Колонка */
+
+.breadcrumbs {
+  position: relative;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  position: absolute;
+  top: -39px;
+}
+
+.breadcrumbs-list li {
+  position: relative;
+}
+
+.breadcrumbs-list li:not(:first-child) {
+  margin-left: 40px;
+}
+
+.breadcrumbs-list li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: -25px;
+  top: 6px;
+  border-left: 1px solid #c1c6ce;
+  border-bottom: 1px solid #c1c6ce;
+  transform: rotate(225deg);
+}
+
+.breadcrumbs-list a {
+  color: #000;
+  font-family: "PT Sans", "Arial",  sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs-list .icon-home {
+  margin-top: 4px;
+}
+
+.page-title {
+  width: 940px;
+  min-height: 89px;
+  margin: 0;
+  padding-right: 24px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+/* Колонка страницы каталога */
 
 .catalog-page-column {
   display: flex;
