@@ -69,7 +69,7 @@ img {
   background-color: #f4f7f9
 }
 
-/* Хедер-топ */
+/* Хедер-верх */
 
 .header-top {
   min-height: 42px;
@@ -281,7 +281,7 @@ input[type="search"]:focus + button .icon-search {
   background-color: #518534;
 }
 
-/* Хедер-мидл */
+/* Хедер-середина */
 
 .header-middle {
   padding-bottom: 34px;
@@ -458,8 +458,7 @@ input[type="search"]:focus + button .icon-search {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.menu-dot {
-}
+/* Хеадер-низ */
 
 .header-down {
   padding-bottom: 60px;
@@ -467,29 +466,35 @@ input[type="search"]:focus + button .icon-search {
 
 .main-navigation {
   width: 940px;
-  min-height: 60px;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
 .site-navigation {
   min-height: 60px;
-  padding-right: 24px;
-  padding-left: 21px;
+  padding-right: 19px;
+  padding-left: 19px;
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: stretch;
 }
 
 .site-navigation li {
+  min-width: 114px;
+  height: 60px;
   display: flex;
+  flex-grow: 1;
+  justify-content: center;
   align-items: stretch;
 }
 
 .site-navigation a {
   padding: 0 31px;
   display: flex;
+  flex-grow: 1;
+  justify-content: center;
   align-items: center;
   font-size: 17px;
   color: #fff;
@@ -504,7 +509,7 @@ input[type="search"]:focus + button .icon-search {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* main */
+/* Мэйн */
 
 .breadcrumbs {
   position: relative;
