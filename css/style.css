@@ -1443,11 +1443,6 @@ input[type="search"]:focus + button .icon-search {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  /*
-  border-left: 4px solid #c5c5c5;
-  border-bottom: 4px solid #c5c5c5;
-  transform: rotate(-45deg);
-  */
 }
 
 .form-developed input[type="checkbox"] + label::after {
@@ -1522,10 +1517,11 @@ input[type="search"]:focus + button .icon-search {
 }
 
 .sorting {
-  height: 38px;
+  min-height: 38px;
   padding: 0 17px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 3px;
