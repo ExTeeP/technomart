@@ -1,4 +1,4 @@
-/*Глобальные */
+/* global */
 
 html {
   box-sizing: border-box;
@@ -747,7 +747,7 @@ input[type="search"]:focus + button .icon-search {
   cursor: pointer;
 }
 
-/* Секция */
+/* section */
 
 .top-item {
   margin-bottom: 1px;
@@ -978,7 +978,8 @@ input[type="search"]:focus + button .icon-search {
   border: 3px solid #32425c;
 }
 
-/* Секция */
+/* section */
+
 .manufacturer {
   padding-bottom: 65px;
 }
@@ -1050,7 +1051,7 @@ input[type="search"]:focus + button .icon-search {
   padding-left: 2px;
 }
 
-/* Секция */
+/* section */
 
 .service {
   min-height: 522px;
@@ -1231,7 +1232,7 @@ input[type="search"]:focus + button .icon-search {
   width: 195px;
 }
 
-/* Секция */
+/* section */
 
 .bottom-column {
   justify-content: space-between;
@@ -1283,7 +1284,7 @@ input[type="search"]:focus + button .icon-search {
   border: 1px solid #ee3643;
 }
 
-/* Секция */
+/* section */
 
 .contacts .text {
   width: 180px;
@@ -1298,7 +1299,7 @@ input[type="search"]:focus + button .icon-search {
   width: 300px;
 }
 
-/* Страница каталога */
+/* catalog page */
 
 .breadcrumbs {
   position: relative;
@@ -1358,14 +1359,14 @@ input[type="search"]:focus + button .icon-search {
   background-color: #f2f6f8;
 }
 
-/* Колонка страницы каталога */
+/* column catalog*/
 
 .catalog-page-column {
   display: flex;
   justify-content: space-between;
 }
 
-/* Секция */
+/* section */
 
 .filter {
   width: 220px;
@@ -1739,7 +1740,7 @@ input[type="search"]:focus + button .icon-search {
   border: 1px solid #ee3643;
 }
 
-/* Сайдбар */
+/* sidebar */
 
 .aside {
   background-color: #f4f7f9;
@@ -1959,7 +1960,7 @@ input[type="search"]:focus + button .icon-search {
   color: #ee3643;
 }
 
-/* работа с текстом и заголовками */
+/* text and title*/
 
 .text {
   margin: 0;
