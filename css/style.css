@@ -959,6 +959,14 @@ promou-button:hover,
   display: flex;
 }
 
+.card-item:focus .item-overlay {
+  display: flex;
+}
+
+.item-overlay:focus-within {
+  display: flex;
+}
+
 .item-overlay li {
   margin: 0;
   margin-bottom: 8px;
