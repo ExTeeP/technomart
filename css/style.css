@@ -246,30 +246,25 @@ img {
   opacity: 0.5;
 }
 
-.full-cart {
-  width: 150px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header-cart.full {
   background-color: #ee3643;
 }
 
-.full-cart:hover,
-.full-cart:focus {
+.header-cart.full:hover,
+.header-cart.full:focus {
   background-color: #ca2c37;
 }
 
-.full-cart:active {
+.header-cart.full:active {
   background: #ba2732;
 }
 
-.full-cart:hover .icon-cart,
-.full-cart:focus .icon-cart {
+.header-cart.full:hover .icon-cart,
+.header-cart.full:focus .icon-cart {
   opacity: 1;
 }
 
-.full-cart:active .icon-cart {
+.header-cart.full:active .icon-cart {
   opacity: 0.5;
 }
 
@@ -312,6 +307,7 @@ img {
 
 .header-contacts {
   width: 270px;
+  margin-right: 51px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,7 +344,7 @@ img {
 
 .user-menu {
   min-width: 299px;
-  margin-left: 51px;
+  max-width: 299px;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -408,14 +404,18 @@ img {
 
 .user-logout {
   width: 299px;
+  margin-left: 0;
+  padding: 0 46px;
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-grow: 0;
 }
 
 .user-logout svg:first-child {
-  margin-right: 14px;
+  position: absolute;
+  left: 14px;
 }
 
 .user-logout svg:last-child {
@@ -435,6 +435,7 @@ img {
 .user-login-menu {
   width: 299px;
   min-height: 18px;
+  margin-top: 2px;
   padding-right: 71px;
   padding-left: 17px;
   display: flex;
@@ -783,7 +784,7 @@ img {
 
 .catalog {
   width: 700px;
-  padding-bottom: 65px;
+  margin-bottom: 60px;
 }
 
 .catalog-items {
@@ -1393,8 +1394,8 @@ img {
 }
 
 .form-field {
-  padding: 0;
   margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -1479,13 +1480,13 @@ img {
 
 .divider {
   width: 220px;
-  margin: 25px 0 18px;
+  margin: 23px 0 17px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .form-developed li:not(:last-child),
 .form-power li:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 .form-developed label,
@@ -1585,7 +1586,7 @@ img {
 .filter-button {
   min-width: 140px;
   height: 38px;
-  margin-top: 80px;
+  margin-top: 78px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1695,8 +1696,8 @@ img {
 }
 
 .pagination-list {
+  margin-top: 32px;
   display: flex;
-
 }
 
 .pagination-list li {
@@ -1748,13 +1749,13 @@ img {
 
 .aside .container {
   flex-direction: column;
-  padding-top: 65px;
-  padding-bottom: 70px;
+  padding-top: 63px;
+  padding-bottom: 68px;
 }
 
 .aside-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
@@ -1790,7 +1791,7 @@ img {
 }
 
 .footer-address {
-  width: 322px;
+  width: 325px;
   min-height: 40px;
   margin: 0;
   padding-left: 2px;
