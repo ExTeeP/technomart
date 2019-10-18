@@ -950,6 +950,7 @@ promou-button:hover,
   top: 1px;
   left: 1px;
   display: flex;
+  opacity: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -960,8 +961,8 @@ promou-button:hover,
   display: flex;
 }
 
-.item-overlay:not(:focus-within) {
-  opacity: 0;
+.item-overlay:focus-within {
+  opacity: 1;
 }
 
 .item-overlay li {
