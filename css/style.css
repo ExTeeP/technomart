@@ -11,6 +11,7 @@ html {
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -91,8 +92,8 @@ img {
 
 .header-top {
   min-height: 42px;
-  background-color: #293449;
   margin-bottom: 46px;
+  background-color: #293449;
 }
 
 .header-top .container {
@@ -101,6 +102,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
+  background-color: #293449;
 }
 
 .header-top a {
@@ -202,6 +204,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #293449;
 }
 
 .icon-bookmark {
@@ -260,6 +263,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #293449;
 }
 
 .icon-cart {
@@ -331,6 +335,7 @@ img {
 
 .header-middle {
   padding-bottom: 39px;
+  background-color: #f4f7f9
 }
 
 .title {
@@ -1650,10 +1655,6 @@ img {
   cursor: pointer;
 }
 
-.filter-button:active {
-  font-size: 0;
-}
-
 .sorting {
   min-height: 38px;
   padding: 0 0 0 17px;
@@ -1823,6 +1824,10 @@ img {
   color: #000;
 }
 
+.aside-text {
+  width: 940px;
+}
+
 /* footer */
 
 .footer-up {
@@ -1929,25 +1934,23 @@ img {
 
 .footer-down {
   background-color: #293449;
-  padding-top: 38px;
+  padding-top: 35px;
   padding-bottom: 27px;
 
-}
-
-.footer-down .container {
-  justify-content: space-between;
 }
 
 .copyright {
   width: 228px;
   margin: 0;
+  margin-right: 113px;
+  padding-top: 2px;
   font-size: 16px;
   line-height: 18px;
   color: #fff;
 }
 
 .social-wrapper {
-  margin-left: 46px;
+  margin: 0 46px;
 }
 
 .social {
@@ -1984,6 +1987,8 @@ img {
 
 .footer-feedback-wrapper {
   width: 300px;
+  margin-left: 69px;
+  padding-top: 2px;
   display: flex;
   justify-content: space-between;
 }
@@ -2049,7 +2054,7 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  display: flex;
+  display: none;
   padding: 0;
   background-color: #fff;
   box-shadow:
@@ -2156,7 +2161,7 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  display: flex;
+  display: none;
   align-content: space-between;
   flex-wrap: wrap;
   background-color: #fff;
