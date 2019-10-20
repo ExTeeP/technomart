@@ -1500,11 +1500,13 @@ img {
 
 .range-runner-min {
   position: absolute;
+  top: 30px;
   left: 20px;
 }
 
 .range-runner-max {
   position: absolute;
+  top: 30px;
   left: 162px;
 }
 
