@@ -61,6 +61,7 @@ img {
   border: none;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   color: #fff;
   background-color: #ee3643;
   text-transform: uppercase;
@@ -558,7 +559,8 @@ img {
 }
 
 .site-navigation a {
-  padding: 0 30px 4px;
+  padding: 0 30px;
+  padding-bottom: 4px;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -840,13 +842,17 @@ img {
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .catalog-items li {
   display: flex;
   align-items: stretch;
+  margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.catalog-items li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .card-item {
@@ -1611,6 +1617,7 @@ img {
   left: -17px;
   top: -3px;
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1623,6 +1630,7 @@ img {
   top: 5px;
   left: -9px;
   display: inline-block;
+  vertical-align: middle;
   width: 9px;
   height: 9px;
   border-radius: 50%;
