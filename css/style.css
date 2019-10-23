@@ -545,7 +545,7 @@ img {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -618,16 +618,11 @@ img {
   background-color: #ffbf47;
 }
 
-.promo-material::after {
-  content: "";
+.promo-material .new-flag {
   position: absolute;
   top: 0;
   left: 240px;
-  width: 60px;
-  height: 59px;
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  z-index: 1;
 }
 
 .promo-tool {
@@ -851,7 +846,11 @@ img {
   margin-bottom: 20px;
 }
 
-.catalog-items li:nth-child(3n) {
+.catalog-item-wrapper .catalog-items li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.index-item-wrapper .catalog-items li:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -865,16 +864,10 @@ img {
   align-content: space-between;
 }
 
-.card-item.new::before {
-  content: "";
+.card-item .new-flag {
   position: absolute;
   top: -1px;
   right: -1px;
-  width: 60px;
-  height: 59px;
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
   z-index: 1;
 }
 
