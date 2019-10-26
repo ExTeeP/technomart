@@ -12,6 +12,7 @@ html {
 
 body {
   min-width: 960px;
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", "Arial", sans-serif;
@@ -2031,6 +2032,20 @@ img {
 }
 
 /* modal */
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlay-show {
+  display: block;
+}
 
 .modal-map {
   width: 940px;
