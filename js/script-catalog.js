@@ -20,4 +20,4 @@ buttonClose.addEventListener("click", function (evt) {
 closeModal.addEventListener("click", function(evt) {
   popupNotify.classList.remove("modal-notify-show");
   closeModal.classList.remove("overlay-show");
-})
+});
