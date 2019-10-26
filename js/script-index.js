@@ -41,12 +41,13 @@ buttonClose.addEventListener("click", function (evt) {
 closeModal.addEventListener("click", function (evt) {
   popupFeedback.classList.remove("modal-feedback-show");
   closeModal.classList.remove("overlay-show");
+  popupFeedback.classList.remove("modal-feedback-error");
 });
 
 formFeedback.addEventListener("submit", function (evt) {
   if (!nameField.value || !emailField.value || !feedbackField.value) {
     evt.preventDefault();
-    console.log("Нужно заполнить поля.");
+    popupFeedback.classList.add("modal-feedback-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", nameField.value);
@@ -60,6 +61,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (popupFeedback.classList.contains("modal-feedback-show")) {
       popupFeedback.classList.remove("modal-feedback-show");
+      popupFeedback.classList.remove("modal-feedback-error");
       closeModal.classList.contains("overlay-show");
       closeModal.classList.remove("overlay-show");
     }
