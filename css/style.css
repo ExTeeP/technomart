@@ -2104,6 +2104,24 @@ img {
     z-index: 10;
 }
 
+.modal-map-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.modal-map iframe {
+  position: relative;
+  border: none;
+  z-index: 20;
+}
+
 .modal-feedback {
   width: 620px;
   min-height: 423px;
@@ -2295,4 +2313,5 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 50;
 }
