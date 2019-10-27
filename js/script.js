@@ -56,6 +56,8 @@ if (feedback) {
   formFeedback.addEventListener("submit", function (evt) {
     if (!nameField.value || !emailField.value || !feedbackField.value) {
       evt.preventDefault();
+      popupFeedback.classList.remove("modal-feedback-error");
+      popupFeedback.offsetWidth = popupFeedback.offsetWidth; //штука которая трясет форму повторно
       popupFeedback.classList.add("modal-feedback-error");
     } else {
       if (isStorageSupport) {
@@ -158,5 +160,48 @@ if (notifyBuy) {
         closeModal.classList.remove("overlay-show");
       }
     }
+  });
+};
+
+//slider service
+
+var service = document.querySelector(".service");
+
+if (service) {
+  var deliveryButton = document.querySelector(".delivery-button");
+  var deliveryPage = document.querySelector(".delivery-page");
+  var guaranteeButton = document.querySelector(".guarantee-button");
+  var guaranteePage = document.querySelector(".guarantee-page");
+  var creditButton = document.querySelector(".credit-button");
+  var creditPage = document.querySelector(".credit-page");
+
+  deliveryButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    deliveryButton.classList.add("service-active");
+    deliveryPage.classList.add("page-show");
+    guaranteeButton.classList.remove("service-active");
+    guaranteePage.classList.remove("page-show");
+    creditButton.classList.remove("service-active");
+    creditPage.classList.remove("page-show");
+  });
+
+  guaranteeButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    guaranteeButton.classList.add("service-active");
+    guaranteePage.classList.add("page-show");
+    deliveryButton.classList.remove("service-active");
+    deliveryPage.classList.remove("page-show");
+    creditButton.classList.remove("service-active");
+    creditPage.classList.remove("page-show");
+  });
+
+  creditButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    creditButton.classList.add("service-active");
+    creditPage.classList.add("page-show");
+    deliveryButton.classList.remove("service-active");
+    deliveryPage.classList.remove("page-show");
+    guaranteeButton.classList.remove("service-active");
+    guaranteePage.classList.remove("page-show");
   });
 };

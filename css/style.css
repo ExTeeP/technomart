@@ -66,6 +66,7 @@ img {
   color: #fff;
   background-color: #ee3643;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -1189,7 +1190,7 @@ img {
   background-color: #32425c;
 }
 
-.service-button.active {
+.service-active {
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   color: #32425c;
   background-color: #fff;
@@ -1202,7 +1203,8 @@ img {
   background-color: #293449;
 }
 
-.service-button:active {
+.service-active:hover,
+.service-active:focus {
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   color: #32425c;
   background-color: #fff;
@@ -1216,20 +1218,12 @@ img {
   min-height: 280px;
   position: relative;
   padding-left: 80px;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
-.delivery-page {
+.page-show {
   display: flex;
-}
-
-.guarantee-page {
-  display: none;
-}
-
-.credit-page {
-  display: none;
 }
 
 .service-page-title {
