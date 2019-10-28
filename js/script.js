@@ -163,6 +163,35 @@ if (notifyBuy) {
   });
 };
 
+//slider index promo
+
+var slider = document.querySelector(".slider-promo");
+
+if (slider) {
+  var sliderOne = document.querySelector(".slider-1");
+  var sliderTwo= document.querySelector(".slider-2");
+  var buttonSliderLeft= document.querySelector(".button-left");
+  var buttonSliderRight= document.querySelector(".button-right");
+  var dotSliderOne= document.querySelector(".slider-dot-1");
+  var dotSliderTwo= document.querySelector(".slider-dot-2");
+
+  buttonSliderLeft.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    sliderOne.classList.add("slider-show");
+    dotSliderOne.classList.add("slider-dot-show");
+    sliderTwo.classList.remove("slider-show");
+    dotSliderTwo.classList.remove("slider-dot-show");
+  });
+
+  buttonSliderRight.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    sliderTwo.classList.add("slider-show");
+    dotSliderTwo.classList.add("slider-dot-show");
+    sliderOne.classList.remove("slider-show");
+    dotSliderOne.classList.remove("slider-dot-show");
+  });
+};
+
 //slider service
 
 var service = document.querySelector(".service");
